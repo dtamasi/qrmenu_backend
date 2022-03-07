@@ -133,3 +133,11 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     )
 }
+
+STRIPE_API_SECRET_KEY = "sk_test_51IgtcZKDQFUfRxs6YcRRG61aUnQlnESN4Iwp1Dg0lqxpDLjoAJ6Wos0rYyTYiqw1194cdFyF1YA68hhiSZhuzFHx00Fq5Dg7Ww"
+
+try:
+    import django_heroku
+    django_heroku.settings(locals())
+except:
+    pass
